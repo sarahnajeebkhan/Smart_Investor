@@ -1,0 +1,43 @@
+{% extends "pred_app/base.html" %}
+{% load static %}
+{% block nav %}
+<li>
+    <a href="index">
+        Home
+    </a>
+</li>
+<li>
+    <a href="pred">
+        Prediction
+    </a>
+</li>
+<li>
+    <a href="contact">
+        Contact Us
+    </a>
+</li>
+<li>
+    <a href="gallery">
+        Gallery
+    </a>
+</li>
+<li class="active">
+    <a href="about">
+        About Us
+    </a>
+</li>
+{% endblock nav %}
+{% block content %}
+<div class="col c3" style="width:720px">
+    <h2>
+        <span>
+            About Us
+        </span>
+    </h2>
+    This project is built using the LSTM Model which is a special type of Recurrent Neural Network(RNN). Long Short-Term Memory 
+    (LSTM) networks are a type of recurrent neural network capable of learning order dependence in sequence prediction problems. 
+    This is a behavior required in complex problem domains like machine translation, speech recognition, and more. LSTMs are a 
+    complex area of deep learning. It can be hard to get your hands around what LSTMs are, and how terms like bidirectional and 
+    sequence-to-sequence relate to the field.
+</div>
+{% endblock content %}

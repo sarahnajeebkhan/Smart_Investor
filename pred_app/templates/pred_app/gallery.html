@@ -1,0 +1,58 @@
+{% extends "pred_app/base.html" %}
+{% load static %}
+{% block nav %}
+<li>
+    <a href="index">
+        Home
+    </a>
+</li>
+<li>
+    <a href="pred">
+        Prediction
+    </a>
+</li>
+<li>
+    <a href="contact">
+        Contact Us
+    </a>
+</li>
+<li class = "active">
+    <a href="gallery">
+        Gallery
+    </a>
+</li>
+<li>
+    <a href="about">
+        About Us
+    </a>
+</li>
+{% endblock nav %}
+{% block content %}
+<div class="content">
+<div class="col c1">
+    <h2>
+        <span>
+            Image Gallery
+        </span>
+    </h2>
+    <a href="#">
+        <img alt="" height="300" src="{% static 'pred_app/img/image2.jpg' %}" width="300"/>
+    </a>
+    <a href="#">
+        <img alt="" height="300" src="{% static 'pred_app/img/image3.jpg' %}" width="300"/>
+    </a>
+    <a href="#">
+        <img alt="" height="300" src="{% static 'pred_app/img/image4.jpg' %}" width="300"/>
+    </a>
+    <a href="#">
+        <img alt="" height="300" src="{% static 'pred_app/img/image5.jpg' %}" width="300"/>
+    </a>
+    <a href="#">
+        <img alt="" height="300" src="{% static 'pred_app/img/image6.jpg' %}" width="300"/>
+    </a>
+    <a href="#">
+        <img alt="" height="300" src="{% static 'pred_app/img/image7.jpg' %}" width="300"/>
+    </a>
+</div>
+</div>
+{% endblock content %}
